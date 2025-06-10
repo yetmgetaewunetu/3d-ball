@@ -34,7 +34,7 @@ let clock = new THREE.Clock();
 function animate() {
   requestAnimationFrame(animate);
   const elapsed = clock.getElapsedTime();
-  animateCamera(camera, elapsed, product); // Pass product for rotation
+  animateCamera(camera, elapsed); // Camera auto-rotation
   controls.update();
   // Optional: floating effect
   product.position.y = 0.05 * Math.sin(elapsed * 2);
